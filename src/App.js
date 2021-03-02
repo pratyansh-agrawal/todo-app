@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import Form from './Form';
+import "./App.css";
+import Form from "./Form";
+import Typography from "@material-ui/core/Typography";
+
 function App() {
   return (
     <div className="App">
-      Todos
-      <Form />
+      <Typography component="h1" variant="h2">
+        Todos
+      </Typography>
+      <Form saveTodo={console.warn} />
     </div>
   );
 }
