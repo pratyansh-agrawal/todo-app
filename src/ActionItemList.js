@@ -10,13 +10,19 @@ import {
 
 import DeleteIcon from "@material-ui/icons/Delete";
 
-const ActionItemList = ({ todos, deleteTodo }) => {
+const ActionItemList = ({ todos, deleteTodo, toggleTodoState }) => {
   return (
     <List>
       {todos.map((todo, index) => (
         <ListItem key={index} dense>
-          <Checkbox tabIndex={-1} disableRipple/>
-          <ListItemText primary={todo}/>
+          <Checkbox
+            checked={todo.complete}
+            color='primary'
+            tabIndex={-1}
+            disableRipple
+            onClick={() => toggleTodoState(index)}
+          />
+          <ListItemText primary={todo.text} />
           <ListItemSecondaryAction>
             <IconButton
               aria-label="Delete"
