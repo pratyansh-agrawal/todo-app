@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Form = ({ saveTodo }) => {
   const [value, setValue] = useState("");
@@ -13,7 +14,8 @@ const Form = ({ saveTodo }) => {
         }}
     >
       <TextField
-        placeholder="Add action item here"
+        className={"text-white bg-dark"}
+        placeholder=" + Add action item here..."
         onChange={(event) => setValue(event.target.value)}
         variant="outlined"
         margin="normal"

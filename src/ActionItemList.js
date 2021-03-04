@@ -10,9 +10,12 @@ import {
 
 import DeleteIcon from "@material-ui/icons/Delete";
 
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 const ActionItemList = ({ todos, deleteTodo, toggleTodoState }) => {
   return (
-    <List>
+    <List className={""}>
       {todos.map((todo, index) => (
         <ListItem key={index} dense>
           <Checkbox
