@@ -9,6 +9,7 @@ const Form = ({ saveTodo }) => {
         onSubmit={(event) => {
             event.preventDefault();
             saveTodo(value);
+            setValue('');
         }}
     >
       <TextField
