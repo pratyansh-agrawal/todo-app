@@ -18,6 +18,7 @@ const Form = ({ saveTodo }) => {
         variant="outlined"
         margin="normal"
         value={value}
+        fullWidth
       />
     </form>
   );

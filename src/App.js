@@ -10,7 +10,7 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   return (
-    <div className="App">
+    <div className="App overlay">
       <Typography component="h1" variant="h2">
         Todos
       </Typography>

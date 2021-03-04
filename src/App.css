@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 6px;
+  background-color: salmon;
 }
 
 .App-logo {
@@ -35,4 +37,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.overlay{
+  position:fixed;
+  width:100%;
+  height:100%;
 }
