@@ -17,12 +17,15 @@ const ActionItemList = ({ todos, deleteTodo, toggleTodoState }) => {
         <ListItem key={index} dense>
           <Checkbox
             checked={todo.complete}
-            color='primary'
+            color="primary"
             tabIndex={-1}
             disableRipple
             onClick={() => toggleTodoState(index)}
           />
-          <ListItemText primary={todo.text} />
+          <ListItemText
+            primary={todo.text}
+            style={todo.complete ? {textDecoration: "line-through"}: {}}
+          />
           <ListItemSecondaryAction>
             <IconButton
               aria-label="Delete"
